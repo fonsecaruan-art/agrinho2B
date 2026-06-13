@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgroInova Paraná | Sustentabilidade e Tecnologia no Campo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="accessibility-bar" role="complementary" aria-label="Ferramentas de Acessibilidade">
+        <div class="container accessibility-container">
+            <span>Acessibilidade:</span>
+            <button id="btn-font-decrease" aria-label="Diminuir texto">A-</button>
+            <button id="btn-font-increase" aria-label="Aumentar texto">A+</button>
+            <button id="btn-contrast" aria-label="Alternar Alto Contraste">Alto Contraste</button>
+        </div>
+    </div>
+
+    <header class="main-header">
+        <div class="container header-container">
+            <div class="logo">
+                <span class="logo-bold">AGRO</span><span class="logo-light">INOVA</span>
+            </div>
+            <nav class="nav-menu" aria-label="Navegação Principal">
+                <a href="#sobre">O Hub</a>
+                <a href="#pilares">Inovação</a>
+                <a href="#publico">Ecossistema</a>
+                <a href="#pesquisa">Pesquisa & FAQ</a>
+            </nav>
+            <a href="#contato" class="btn btn-secondary">Conectar-se</a>
+        </div>
+    </header>
+
+    <section class="hero-section">
+        <div class="container hero-container">
+            <div class="hero-content">
+                <span class="badge">Região Central do Paraná</span>
+                <h1>Onde a tradição da terra encontra a ciência do amanhã.</h1>
+                <p>Impulsionamos o desenvolvimento rural sustentável conectando cooperativas, pesquisadores e produtores locais às tecnologias de cultivo regenerativo e agricultura de precisão.</p>
+                <div class="hero-cta-group">
+                    <a href="#contato" class="btn btn-primary">Fazer Parte do Ecossistema</a>
+                    <a href="#pilares" class="btn btn-outline">Ver Soluções Tecnológicas</a>
+                </div>
+            </div>
+            <div class="hero-image-placeholder">
+                <div class="tech-grid-effect"></div>
+                <div class="floating-card">
+                    <span class="card-number">4.0</span>
+                    <span class="card-text">Agricultura regenerativa e conectada no coração do PR.</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="pilares" class="benefits-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Inovação com Propósito Sustentável</h2>
+                <p>Nossas diretrizes unem produtividade econômica à preservação ambiental para atender às exigências do mercado global.</p>
+            </div>
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-icon">🛰️</div>
+                    <h3>Monitoramento Inteligente</h3>
+                    <p>Análise de solo e lavouras via satélite e sensores IoT adaptados às microclimas e relevos da região central paranaense.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">🍃</div>
+                    <h3>Manejo Regenerativo</h3>
+                    <p>Práticas de conservação que protegem bacias hidrográficas locais, reduzem carbono e restauram a biodiversidade do solo.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">🌾</div>
+                    <h3>Rastreabilidade Total</h3>
+                    <p>Garantia de origem que agrega valor à produção de grãos e hortifrúti, aproximando o consumidor final do produtor.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="publico" class="carousel-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Unindo Forças no Campo</h2>
+                <p>Uma plataforma integrada desenvolvida para atender às demandas de múltiplos setores do agronegócio paranaense.</p>
+            </div>
+            
+            <div class="carousel-wrapper">
+                <div id="dynamic-carousel" class="carousel-track">
+                    </div>
+                <div class="carousel-controls">
+                    <button id="carousel-prev" aria-label="Anterior">←</button>
+                    <button id="carousel-next" aria-label="Próximo">→</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato" class="cta-section">
+        <div class="container cta-container">
+            <div class="cta-info">
+                <h2>Transforme o futuro rural com a gente</h2>
+                <p>Seja você um pequeno agricultor, um pesquisador acadêmico ou um representante de cooperativa, temos canais de fomento e parcerias técnicas ideais para o seu perfil.</p>
+                <div class="trust-indicators">
+                    <div>✓ Integração Local</div>
+                    <div>✓ Selo Sustentável</div>
+                </div>
+            </div>
+            <div class="cta-form-wrapper">
+                <form id="lead-form" class="cta-form">
+                    <div class="form-group">
+                        <label refinement="name" for="name">Seu Nome ou Instituição</label>
+                        <input type="text" id="name" required placeholder="Ex: Cooperativa AgroCentral">
+                    </div>
+                    <div class="form-group">
+                        <label for="profile">Seu Perfil</label>
+                        <input type="text" id="profile" required placeholder="Ex: Agricultor, Pesquisador, Estudante">
+                    </div>
+                    <div class="form-group">
+                        <label for="contact-info">E-mail ou WhatsApp</label>
+                        <input type="text" id="contact-info" required placeholder="contato@exemplo.com">
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Solicitar Parceria Técnica</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section id="pesquisa" class="faq-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Ciência Aplicada e Dúvidas</h2>
+                <p>Esclarecemos os fundamentos das nossas iniciativas de inovação aberta e extensão rural no Paraná.</p>
+            </div>
+            <div id="dynamic-accordion" class="accordion-wrapper">
+                </div>
+        </div>
+    </section>
+
+    <footer class="main-footer">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <span class="logo-bold">AGRO</span><span class="logo-light">INOVA</span>
+                <p>Tecnologia, Sustentabilidade e Conexão Rural. Região Central, PR.</p>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 AgroInova Paraná. Desenvolvido em conformidade com padrões modernos de acessibilidade e responsividade.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
